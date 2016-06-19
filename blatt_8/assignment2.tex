@@ -1,1 +1,20 @@
-Here goes Assignment 8.2
+Gegeben folgendes erweiterte logische Programm P:
+
+\begin{align*}
+a &\leftarrow not\ c\\
+c &\leftarrow b, not\ q\\
+c &\leftarrow not\ d, not\ e\\
+e &\leftarrow a, not\ d\\
+b.
+\end{align*}
+
+Nach Umformung in Default-Logik:
+
+\begin{align*}
+\delta_1 &= \frac{\top:\neg{c}}{a}\\
+\delta_2 &= \frac{b:\neg{q}}{c}\\
+\delta_3 &= \frac{\top:\neg{d}, \neg{e}}{c}\\
+\delta_4 &= \frac{b:\neg{q}}{c}\\
+\delta_5 &= \frac{\top}{b}\\
+def(P) &= (\emptyset,\{\delta_1,\delta_2,\delta_3,\delta_4,\delta_5\})
+\end{align*}
