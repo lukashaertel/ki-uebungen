@@ -1,0 +1,11 @@
+clasp version 3.1.4
+Reading from stdin
+Solving...
+Answer: 1
+starttime(ki_vorlesung,10) starttime(ki_uebung,17) starttime(grillfeier,14) starttime(einkaufen,12) starttime(geldautomat,9)
+SATISFIABLE
+
+Models       : 1+    
+Calls        : 1
+Time         : 0.007s (Solving: 0.00s 1st Model: 0.00s Unsat: 0.00s)
+CPU Time     : 0.016s

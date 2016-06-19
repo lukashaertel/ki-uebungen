@@ -1,0 +1,31 @@
+Logisches Programm $P$:
+
+\begin{align*}
+p &\leftarrow \neg{a}, x.\\
+a &\leftarrow b, not\ q, not\ s.\\
+j &\leftarrow not\ y, r, s.\\
+k &\leftarrow not\ l.\\
+t &\leftarrow r, s, y.\\
+r.\\
+s.\\
+y.
+\end{align*}
+
+\subsection*{Aufgabenteil a)}
+
+Für $S = \{r, s, t\}.$ ist das Redukt $P^S$:
+\begin{equation*}
+P^S = \{p \leftarrow \neg{a}, x., j \leftarrow r, s., k., t\leftarrow r, s, y., r., s., y.\}
+\end{equation*}
+
+Minimales Modell von $P^S$ ist $\{k, r, s, y, t, j\} \neq S$, damit ist S keine Antwortmenge.
+
+\subsection*{Aufgabenteil b)}
+
+Setze $S := \{k, r, s, y, t, j\}$, dann ist das Redukt $P^S$:
+
+\begin{equation*}
+P^S = \{p \leftarrow \neg{a}, x., j \leftarrow r, s., k., t \leftarrow r, s, y., r., s., y. \}
+\end{equation*}
+
+Minimales Modell von $P^S$ ist $\{k, r, s, y, t, j\} = S$, damit Antwortmenge.

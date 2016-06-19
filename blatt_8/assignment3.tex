@@ -1,0 +1,36 @@
+
+\paragraph{Allgemeines Wissen} Aus dem Übungstext übernommen. Erst werden Tageszeiten, Aufgaben und ihre Dauer, Voraussetzungen und bekannte Startzeiten angegeben.
+
+\lstinputlisting[ %
+	language=Prolog, %
+	firstnumber=1, %
+	firstline=1, %
+	lastline=15, %
+	caption={problem.lp}] %
+{assignment3/problem.lp}
+
+
+\paragraph{Abgeleitetes Wissen} Berechnung der Endzeit einer Aufgabe, Constraints für Aufgabenvoraussetzung, Überprüfung auf Tageszeit, Vermeidung von Überlappung, sowie Generator für alle möglichen Startzeiten.
+
+Überlappungen werden durch die belegten Stunden abgefangen, wie durch \lstinline+occupied/2+ vorbereitet und das letzte Constraint angegeben.
+
+\lstinputlisting[ %
+	language=Prolog, %
+	firstnumber=16, %
+	firstline=16, %
+	lastline=39, %
+	caption={problem.lp (contd.)}]%
+{assignment3/problem.lp}
+
+\paragraph{Resultat} Nach Berechnung über \lstinline+gringo problem.lp | clasp > result.txt+ ergeben sich die folgenden Belegungen.
+
+\begin{enumerate}
+	\item[\footnotesize 9 Uhr] Geldautomat
+	\item[\footnotesize 10 Uhr] KI-Vorlesung
+	\item[\footnotesize 12 Uhr] Einkaufen
+	\item[\footnotesize 14 Uhr] Grillfeier
+	\item[\footnotesize 17 Uhr] KI-Übung
+\end{enumerate}
+
+\lstinputlisting[caption={result.txt}] %
+{assignment3/result.txt}

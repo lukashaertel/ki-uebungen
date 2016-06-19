@@ -1,0 +1,43 @@
+Logisches Programm P:
+
+p <- -a, x.
+a <- b, not q, not s.
+j <- not y, r, s.
+k <- not l.
+t <- r, s, y.
+r.
+s.
+y.
+
+a)
+
+S = {r, s, t}.
+
+P^S = {
+	p <- -a, x.,
+	j <- r, s.,
+	k.,
+	t <- r, s, y.,
+	r.,
+	s.,
+	y.
+}
+
+Minimales Modell von P^S
+	{k, r, s, y, t, j} != S, damit ist S keine Antwortmenge.
+b)
+
+Setze S := {k, r, s, y, t, j}
+
+Dann ist P^S = {
+	p <- -a, x.,
+	j <- r, s.,
+	k.,
+	t <- r, s, y.,
+	r.,
+	s.,
+	y.
+}
+
+Minimales Modell von P^S
+	{k, r, s, y, t, j} = S, damit Antwortmenge.
