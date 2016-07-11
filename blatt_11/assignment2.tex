@@ -1,0 +1,35 @@
+\newcommand{\bdia}{\mathsf{A}}
+\newcommand{\bdie}{\mathsf{E}}
+\newcommand{\bdil}[1]{\mathit{#1}}
+\newcommand{\bdif}{\mathit{\mathsf{F}}}
+\newcommand{\bdix}{\mathit{\mathsf{X}}}
+
+\newcommand{\bdibel}[1]{Bel_\text{#1}}
+\newcommand{\bdides}[1]{Des_\text{#1}}
+\newcommand{\bdiint}[1]{Int_\text{#1}}
+
+\begin{enumerate}[label=\alph*)]
+	\item
+	$\bdibel{Speedy}\neg\bdie\bdif\bdil{sonnenfinsternis}\wedge\bdil{sicher}$
+
+	\item
+	$\bdibel{Powell}\neg\bdie\bdif\bdil{sonnenfinsternis}\wedge\neg\bdil{sicher}\wedge\bdibel{Powell}\bdibel{Speedy}\bdie\bdif\bdil{sonnenfinsternis}\wedge\neg\bdil{sicher}$	
+	
+	\item
+	$(\bdibel{Speedy}\neg\bdie\bdif\bdil{sonnenfinsternis}\wedge\bdil{sicher})\wedge(\bdides{Speedy}\bdia\bdif\bdil{sonnenfinsternis}) $
+	
+	\item
+	$\bdibel{Powell}\bdia\bdix\neg\bdil{sonnenfinsternis}\wedge\bdiint{Powell}\bdia\bdix\bdil{reparieren}$
+%	\item
+%	$\bdibel{Powell}(\bdil{sonnenfinsternis}\wedge\bdil{sicher})\wedge\bdibel{Powell}(\bdibel{Speedy}(\bdil{sonnenfinsternis}\wedge\neg\bdil{sicher})) $
+%	
+%	\item
+%	$\bdibel{Speedy}(\bdil{sonnenfinsternis}\wedge\neg\bdil{sicher})\wedge\bdides{Speedy}\bdia\bdif\bdil{sonnenfinsternis}$
+%	
+%	\item
+%	$\bdibel{Powell}\bdia\bdix\neg\bdil{sonnenfinsternis}\wedge\bdiint{Powell}\bdia\bdix\bdil{reparieren}$
+%	
+	\item
+	$(\bdibel{Speedy}\bdides{Powell}\bdie\bdix\bdil{reparieren})\wedge(\bdibel{Speedy}\bdia\bdix\bdil{sonnenfinsternis})\wedge(\bdibel{Speedy}\bdia\bdix\bdil{sonnenfinsternis}\Rightarrow\neg\bdil{sicher})$
+%	
+\end{enumerate}

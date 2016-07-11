@@ -1,0 +1,30 @@
+% Font used to render code
+
+\newcommand{\defaultstyle}{\footnotesize}
+\newcommand{\keywordstyle}{\defaultstyle\bfseries}
+\newcommand{\commentstyle}{\defaultstyle\color[rgb]{0.0,0.3,0.0}}
+\newcommand{\stringstyle}{\defaultstyle\color[rgb]{0.3,0.0,0.0}}
+\newcommand{\numberstyle}{\defaultstyle\tiny\color[rgb]{0.2,0.2,0.2}}
+\definecolor{codebackground}{rgb}{0.99,0.99,0.99}
+
+
+% Setup the listings
+\lstset{%
+	fontadjust=true,
+	showstringspaces=false,
+	stringstyle=\stringstyle,
+	keywordstyle=\keywordstyle,
+	commentstyle=\commentstyle,
+	columns=fixed,
+	tabsize=4,
+	numberstyle=\numberstyle, 
+	backgroundcolor=\color{codebackground},
+	stepnumber=1,
+	numbersep=3pt, 
+	% aboveskip=1.5\medskipamount,%
+	% belowskip=1.5\medskipamount,
+	numbers=left,            
+	aboveskip=0.5\medskipamount,
+	belowskip=0.5\medskipamount,
+	breaklines=true
+}
